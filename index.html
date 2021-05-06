@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Vamos a buscar el CSS de Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+        <!-- Vamos a buscar las Fuentes de Google -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Girassol&display=swap" rel="stylesheet" />
+        <!-- Complementemos Bootstrap y aprovechemos las Fuentes de Google -->
+        <style>
+            body {
+                font-family: "IBM Plex Sans", sans-serif;
+                font-weight: 400;
+                background: rgb(232, 244, 241);}
+    /*En background se cambia el color de fondo de la página*/
+
+            h1 {
+                font-family: "Girassol", cursive;
+                font-weight: 400;
+                font-size: calc(3rem + 1.5vw);
+                color:#112;
+                line-height: 1;}
+
+            h4 {
+                font-family: "Girassol";
+                font-weight: 400;
+                font-size: calc(1rem + 1.5vw);
+                color:#100;
+                line-height: 1;}
+
+            h2, h3, h5, h6 {
+                font-weight: 600;}
+
+            header {
+                background: url("img/cabecera.jpg") center bottom no-repeat;
+                background-size: cover;
+                padding: 15vh 0 0 0;}
+
+
+            main p.lead {
+                text-align: justify;
+                letter-spacing: 0.025rem;
+                line-height: 1.6;}
+
+            main p em {font-weight: 500;}
+
+            a {color:#123;}
+
+            a:hover {
+                color:#000;
+                text-decoration: none;
+                transition: all ease 0.5s;}
+        </style>
+        <title>De los volcanes a tu nevera</title>
+    </head>
+    <body>
+        <body>
+            <header class="container-fluid">
+                <div class="row py-5">
+                    <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                        <h1 class="mb-3 mt-5 text-center">De los volcanes a tu nevera</h1>
+                        <h2 class="fs-6 mb-5 text-center text-uppercase">por Valentina, Naomi y Rosa</h2>
+                    </div>
+            </header>
+
+            <main class="container mb-5">
+                <div class="row g-3">
+                    <div class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 mx-auto">
+                        <p class="lead";  style="text-align: center">La cervecería que nació entre valles, flora, fauna y un caudal de agua tan pura como solo el sur de Chile puede lograr.</p>
+                    </div>
+                </div>
+
+                <!--la solución era colocar el div class row, dando la orden de columnas, también se tenían que cerrar al final porque faltaba el "</div>-->
+
+                  <div class="row g-3">
+                    <div class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 mx-auto">
+                        <p style="text-align: justify"> Fundada en 2008 en la Región del Maule, Volcanes del Sur es una cervecería artesanal que entrega una propuesta especial en sus productos gracias al agua mineral que utiliza; a 68 metros de profundidad, emana pura, fresca y libre de contaminación.</p>
+
+
+                         <p style="text-align: justify"> Existen dos grandes familias de cervezas y podemos clasificar los productos de la Volcanes en ellas. Por un lado está la familia <em>Ale</em>, compuesta por toda cerveza fermentada en caliente (entre 15° y 25° C) y por otro, la famila <em>lager</em>, de aquellas cervezas que fermentan con levaduras a bajas temperaturas (entre 5° y 12° C).</p>
+                         <p> Echa un vistazo a las variedades: </p>
+                    </div>
+                </div>
+
+                    <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
+                        <!--esta imagen debe reemplazarse por un SVG-->
+                        <img src="img/familia-cervecera.png" class="w-100 my-4 shadow-sm" />
+                    </div>
+                         <p style="text-align: center"> <i>(*) Es probable que la Doble Malta sea una cerveza mixta, ya que contiene lúpulos usados tanto en las Ale como en las Lager.</i> </p>
+                  <!--Aquí también faltaba un row y cierre del div-->
+                    <div class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 mx-auto">
+                        <p style="text-align: center"> <em><H4 align=center>¿Pero de qué sirve conocerlas si no sabes servirlas?<h4></em></p>
+                    </div>
+                </div>
+
+            <!--Aquí también faltaba el row-->
+
+            <div class="row g-3 my-3">
+                    <div class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 mx-auto">
+
+                        <!-- Acá comienza la sección que contiene la primera secuencia -->
+                        <div class="row d-flex align-items-center my-5">
+                            <div class="col-md-6">
+                                <div id="primerCarrusel" c class="carousel slide carousel-fade shadow-sm" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="1000">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active" data-bs-interval="200">
+                                            <img src="img/1.png" class="d-block w-100" alt="..." />
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="200">
+                                            <img src="img/2.png" class="d-block w-100" alt="..." />
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="200">
+                                            <img src="img/3.png" class="d-block w-100" alt="..." />
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="50">
+                                            <img src="img/4.png" class="d-block w-100" alt="..." />
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="50">
+                                            <img src="img/5.png" class="d-block w-100" alt="..." />
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="200">
+                                            <img src="img/6.png" class="d-block w-100" alt="..." />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 pt-3">
+                                <h5>¡Así se sirve!</h5>
+                                <p style="text-align: justify">Debes inclinar el vaso en 45° para que la cerveza <b>se deslice con suavidad</b> por el borde del vaso o copa. </p>
+                                <p style="text-align: justify">Cuando estés casi terminando, endereza el vaso y termina de llenarlo con la botella ligeramente ladeada, así la corona de espuma es delicada, justa y necesaria.</p>
+                            </div>
+                        </div>
+                        <!-- Acá termina tal sección -->
+
+                        <!-- Acá comienza la sección que contiene la segunda secuencia -->
+                        <div class="row d-flex align-items-center my-5">
+                            <div class="col-md-6 order-md-2">
+                                <div id="segundoCarrusel" c class="carousel slide carousel-fade shadow-sm" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="1000">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active" data-bs-interval="100">
+                                            <img src="img/A.png" class="d-block w-100" alt="..." />
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="100">
+                                            <img src="img/B.png" class="d-block w-100" alt="..." />
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="100">
+                                            <img src="img/C.png" class="d-block w-100" alt="..." />
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="50">
+                                            <img src="img/D.png" class="d-block w-100" alt="..." />
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="50">
+                                            <img src="img/E.png" class="d-block w-100" alt="..." />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 pt-3 order-md-1">
+                                <h5>¡Así NO se sirve!</h5>
+                                <p style="text-align: justify">No importa lo sediento que estés, nunca, <em><b>nunca</b></em> vacíes la cerveza de forma abrupta directo al centro del vaso. ¡A menos que te guste más la espuma que la cerveza!</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                        <!-- Acá termina tal sección -->
+
+                    <div class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 mx-auto">
+                        <p style="text-align: justify"> Al momento de servirlas, lo mejor es respetar su fermentación: no conviene servir una <em>ale</em> muy fría, ni una <em>lager</em> tibia. Por ello, corresponde poner atención al vaso que se utiliza para cada una:</p>
+                    </div>
+                </div>
+                <div class="row g-3 my-3">
+                    <div class="col-6 col-sm-4 col-lg-3 mx-auto">
+                        <div class="card text-light bg-dark mb-3 shadow-sm">
+                            <img src="img/chopp.png" class="card-img-top" />
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">"Schopero"</h5>
+                                <p class="card-text small">Stronger Lager, Premium Lager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3 mx-auto">
+                        <div class="card text-light bg-dark mb-3 shadow-sm">
+                            <img src="img/nonic.png" class="card-img-top" />
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Nonic</h5>
+                                <p class="card-text small">Amber Ale</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3 mx-auto">
+                        <div class="card text-light bg-dark mb-3 shadow-sm">
+                            <img src="img/tulipa.png" class="card-img-top" />
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Tulipa corta</h5>
+                                <p class="card-text small">Hoppy Ipa, Doppelbock (¡todoterreno!)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3 mx-auto">
+                        <div class="card text-light bg-dark mb-3 shadow-sm">
+                            <img src="img/IPA.png" class="card-img-top" />
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Vaso IPA</h5>
+                                <p class="card-text small">Hoppy Ipa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3 my-3">
+                    <div class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 mx-auto">
+                        <p>conclusión de pana</p>
+                        <p style="text-align: center">¿Te interesó? ¡Visita la página oficial de <a href="https://volcanesdelsur.cl/"> <b>Volcanes del Sur</a>!</b></p>
+                        <img src="img/cierre.png" class="w-100 my-5">
+                    </div>
+                </div>
+
+            </main>
+            <footer class="container">
+                <div class="row mt-5 py-3">
+                    <div class="col-12">
+                        <p class="d-flex justify-content-between small p-1 m-0">
+                            <!--reemplaza el # que sigue con la URL de tu cuenta en GitHub-->
+                            <a href="https://github.com/Vale-Altamirano">Vale Altamirano | Rosa Enco | Naomi Elkayam</a>
+                            <a href="https://github.com/profesorfaco/dno075-2021-1/">Infografía Digital v2</a>
+                            <a href="https://github.com/profesorfaco/dno075-2021-1/tree/main/clase-06" class="d-none d-lg-inline">Lunes 3 de mayo, 2021</a>
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    </body>
+</html>
